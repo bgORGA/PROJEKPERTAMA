@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRIS Payment</title>
+    <link rel="stylesheet" href="QRPAYMENT.css">
+</head>
+<body>
+    <div class="qris-container">
+        <div class="qris-header">
+            <h2>Scan QRIS</h2>
+            <p>Shopee Pay, OVO, DANA, Gopay, LinkAja, dan transfer bank via QRIS</p>
+        </div>
+        <div class="qris-code">
+            <img src="qrorga.jpg" alt="QR Code">
+        </div>
+        <div class="qris-footer">
+            <button onclick="downloadQRCode()">Unduh QR Code</button>
+            <button class="cancel-button" onclick="cancelPayment()">BATALKAN</button>
+        </div>
+    </div>
+
+    <script>
+        function downloadQRCode() {
+            const link = document.createElement("a");
+            link.href = "qrorga.jpg"; 
+            link.download = "qrorga.jpg";
+            link.click();
+        }
+
+        function cancelPayment() {
+            alert("Pembayaran dibatalkan");
+            window.location.href = "paymentML.html"; 
+        }
+    </script>
+</body>
+</html>

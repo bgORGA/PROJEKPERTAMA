@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORGASTORE</title>
+    <link rel="stylesheet" href="dash1.css">
+</head>
+<body>
+    <header>
+        <h1>ORGASTORE</h1>
+        <div class="header-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Temukan Produk Favorit">
+                <button>Cari</button>
+            </div>
+
+            <div class="profile-container">
+                <img src="orgalog.jpg" alt="Profile Picture" class="profile-image">
+                <div class="profile-box"><a href="profile.html">MY PROFILE</a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="game-categories">
+            <button class="active">Popular</button>
+            <button>Baru Rilis</button>
+            <button>Top Up Login</button>
+            <button>Mobile Game</button>
+            <button>PC Game</button>
+            <button>Pulsa & PLN</button>
+            <button>Entertainment</button>
+        </section>
+        <div class="container">
+            <div class="game-card" onclick="animateCard(this)">
+                <img src="mobilleg.jpg" alt="Mobile Legends: Bang Bang">
+                <h3><a href="paymentML.html">Mobile Legends: Bang Bang</a></h3>
+                <p>Moonton</p>
+            </div>
+            <div class="game-card" onclick="animateCard(this)">
+                <img src="pripeler.jpg" alt="Free Fire">
+                <h3>Free Fire</h3>
+                <p>Garena</p>
+            </div>
+            <div class="game-card" onclick="animateCard(this)">
+                <img src="pubg.jpg" alt="PUBG Mobile Indonesia">
+                <h3>PUBG Mobile Indonesia</h3>
+                <p>Tencent</p>
+            </div>
+            <div class="game-card" onclick="animateCard(this)">
+                <img src="gensin.jpg" alt="Genshin Impact">
+                <h3>Genshin Impact</h3>
+                <p>HoYoverse</p>
+            </div>
+            <div class="game-card" onclick="animateCard(this)">
+                <img src="honkai.jpg" alt="Honkai: Star Rail">
+                <h3>Honkai: Star Rail</h3>
+                <p>miHoYo</p>
+            </div>
+            <div class="game-card" onclick="animateCard(this)">
+                <img src="hok.jpg" alt="Honor of Kings">
+                <h3>Honor of Kings</h3>
+                <p>Tencent</p>
+            </div>
+        </div>
+    </main>
+    <script src="dash2.js"></script>
+</body>
+</html>

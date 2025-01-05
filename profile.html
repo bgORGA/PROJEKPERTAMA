@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Dashboard</h3>
+      <a href="dashboard.html" class="sidebar-btn">Kembali</a>
+      <button class="sidebar-btn">Transaksi</button>
+      <button class="sidebar-btn">Save ID</button>
+      <button class="sidebar-btn">Deposit</button>
+      <button class="sidebar-btn">Membership</button>
+      <button class="sidebar-btn">Mutasi</button>
+      <button class="sidebar-btn">Edit Profil</button>
+      <div class="spacer"></div>
+      <a href="dashboard.html" class="sidebar-btn logout">Log Out</a>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <div class="profile-info">
+          <img src="orgalog.jpg" alt="Avatar" class="avatar">
+          <div>
+            <p class="name">alief rahmat</p>
+            <p class="membership">GOLD</p>
+            <p class="phone">085694314587</p>
+          </div>
+        </div>
+        <div class="balance">
+          <p>Saldo Anda</p>
+          <h2>Rp 821,-</h2>
+          <button class="deposit-btn">Deposit</button>
+        </div>
+      </header>
+      <section class="transactions">
+        <div class="summary">
+          <div class="summary-item">
+            <p>Total</p>
+            <h3>12</h3>
+          </div>
+          <div class="summary-item">
+            <p>Success</p>
+            <h3>12</h3>
+          </div>
+        </div>
+        <div class="recent-transactions">
+          <h3>Transaksi Terakhir</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nomor Invoice</th>
+                <th>Produk</th>
+                <th>Item</th>
+                <th>Data</th>
+                <th>Harga</th>
+                <th>Tanggal</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MLBBX1942145DF1273F35D8F8EBB2</td>
+                <td>Mobile Legends: Bang Bang</td>
+                <td>301 Diamonds (261 + 40 Bonus)</td>
+                <td>99148884012947</td>
+                <td>Rp 78.565,-</td>
+                <td>01/01/2025, 16:50:15</td>
+                <td><button class="status-btn success">Success</button></td>
+              </tr>
+              <tr>
+                <td>MLBBX193819B344012C6A5A7C357F3</td>
+                <td>Mobile Legends: Bang Bang</td>
+                <td>110 Diamonds (100 + 10 Bonus)</td>
+                <td>99148884012947</td>
+                <td>Rp 29.384,-</td>
+                <td>01/12/2024, 16:44:13</td>
+                <td><button class="status-btn success">Success</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

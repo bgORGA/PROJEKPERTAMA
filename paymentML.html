@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Store</title>
+    <link rel="stylesheet" href="paymentML.css">
+</head>
+<body>
+    <div class="container">
+        <div class="diamonds-list">
+            <h2>Daftar Diamonds</h2>
+            <div class="diamond-item">
+                <img src="diamond3.jpg" alt="Diamond Icon">
+                <div class="text">
+                    <p>5 Diamonds (5 + 0 Bonus)</p>
+                    <span>Rp 1.646</span>
+                </div>
+            </div>
+            <div class="diamond-item">
+                <img src="diamond3.jpg" alt="Diamond Icon">
+                <div class="text">
+                    <p>10 Diamonds (9 + 1 Bonus)</p>
+                    <span>Rp 2.965</span>
+                </div>
+            </div>
+            <div class="diamond-item">
+                <img src="diamond3.jpg" alt="Diamond Icon">
+                <div class="text">
+                    <p>12 Diamonds (11 + 1 Bonus)</p>
+                    <span>Rp 3.382</span>
+                </div>
+            </div>
+            <div class="diamond-item">
+                <img src="diamond3.jpg" alt="Diamond Icon">
+                <div class="text">
+                    <p>19 Diamonds (19 + 2 Bonus)</p>
+                    <span>Rp 5.202</span>
+                </div>
+            </div>
+            <div class="diamond-item">
+                <img src="diamond3.jpg" alt="Diamond Icon">
+                <div class="text">
+                    <p>28 Diamonds (28 + 4 Bonus)</p>
+                    <span>Rp 7.650</span>
+                </div>
+            </div>
+            <div class="diamond-item">
+                <img src="diamond3.jpg" alt="Diamond Icon">
+                <div class="text">
+                    <p>40 Diamonds (40 + 6 Bonus)</p>
+                    <span>Rp 11.564</span>
+                </div>
+            </div>
+        </div>
+        <div class="payment-section">
+            <h2>Form Pembelian</h2>
+            <form>
+                <label for="user-id">Masukkan User ID</label>
+                <input type="text" id="user-id" placeholder="Masukkan User ID">
+                
+                <label for="server">Masukkan Server</label>
+                <input type="text" id="server" placeholder="Masukkan Server">
+
+                <label for="whatsapp">Nomor WhatsApp</label>
+                <input type="text" id="whatsapp" placeholder="085xxx">
+
+                <label for="voucher">Voucher</label>
+                <div class="voucher-section">
+                    <input type="text" id="voucher" placeholder="Ketik Kode Promo (Opsional)">
+                    <button type="button">Gunakan</button>
+                </div>
+            </form>
+            <h3>Pilih Metode Pembayaran</h3>
+            <div class="payment-methods">
+                <button class="payment-button" onclick="location.href='QRPAYMENT.html';">Saldo</button>
+                <button class="payment-button" onclick="location.href='QRPAYMENT.html';">Bank Transfer</button>
+                <button class="payment-button" onclick="location.href='QRPAYMENT.html';">QRIS</button>
+                <button class="payment-button" onclick="location.href='QRPAYMENT.html';">E-Wallet</button>
+                <button class="payment-button" onclick="location.href='QRPAYMENT.html';">Virtual Account</button>
+                <button class="payment-button" onclick="location.href='QRPAYMENT.html';">Convenience Store</button>
+            </div>
+            <div class="return-section">
+                <button class="return-button"><a href="dashboard.html">Kembali</a></button>
+            </div>
+    </div>
+    <script src="paymentML.js"></script>
+</body>
+</html>
